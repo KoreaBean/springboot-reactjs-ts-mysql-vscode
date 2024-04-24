@@ -1,5 +1,6 @@
 import 'App.css';
-import { MAIN_PATH,AUTH_PATH,SEARCH_PATH,USER_PATH,BOARD_WRITE_PATH,BOARD_DETAIL_PATH,BOARD_UPDATE_PATH } from 'constant';
+import { AUTH_PATH, MAIN_PATH, SEARCH_PATH, USER_PATH, BOARD_DETAIL_PATH, BOARD_UPDATE_PATH, BOARD_WRITE_PATH } from 'constant';
+
 import Container from 'layouts/Container';
 import { Route, Routes } from 'react-router-dom';
 import Authentication from 'views/Authentication';
