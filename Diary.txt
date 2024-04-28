@@ -1,0 +1,24 @@
+
+서타몽 동영상 : 20.Header 레이아웃 
+
+1. npm install react-cookie - (사용자 로그인 여부 확인)
+-> const [cookie, setCookie] = useCookies
+
+
+2. npm install zustand - (리덕스 처럼 상태관리 해주는 )
+-> store 에서 ts 생성
+
+const useLoginUserStore =  create<LoginUserStore> (set => ({
+  loginUser : null,
+  setLoginUser : (loginUser) => set(state => ({...state, loginUser})),
+  resetLoginUser : () => set(state => ({...state, loginUser : null}))
+})); 
+
+ set(state => ({...state, loginUser})) 이 코드에서 
+
+ state => ({}) , ({}) 이렇게 감싸는데 {} 이거는 코드 블럭을 뜻하는거고 () 이거는 객체를 뜻하는 거임
+
+ 즉 객체 안에서 코드를 변화시키고 객체로 반환해야하니 ({}) 이렇게 감싸서 해야함
+
+ 또한 ...state 이것은 state 와 동일한 새로운 객체를 생성하여 그 새로운 state 객체 안에 loginUser를 새로 생성하여 추가하거나 있다면 업데이트 함.
+ 
