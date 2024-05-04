@@ -3,8 +3,8 @@
     "version": "2.2.13",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -891.3458000000002,
-    "scrollLeft": -297.8780466501245,
+    "scrollTop": -108.07939999999999,
+    "scrollLeft": 0,
     "zoomLevel": 1,
     "show": {
       "tableComment": true,
@@ -19,7 +19,7 @@
     },
     "database": "MySQL",
     "databaseName": "",
-    "canvasType": "ERD",
+    "canvasType": "@vuerd/builtin-sql-ddl",
     "language": "GraphQL",
     "tableCase": "pascalCase",
     "columnCase": "camelCase",
@@ -213,7 +213,7 @@
           "active": false,
           "left": 47.5,
           "top": 553,
-          "zIndex": 188,
+          "zIndex": 1,
           "widthName": 60,
           "widthComment": 84.5703125,
           "color": "#FFEB3B"
@@ -414,7 +414,7 @@
           "active": false,
           "left": 717.6111,
           "top": 549.6111,
-          "zIndex": 275,
+          "zIndex": 4,
           "widthName": 60,
           "widthComment": 84.5703125,
           "color": "#03A9F4"
@@ -477,7 +477,7 @@
           "active": false,
           "left": 1402.5,
           "top": 602.5,
-          "zIndex": 298,
+          "zIndex": 6,
           "widthName": 60,
           "widthComment": 120,
           "color": "#CDDC39"
@@ -497,15 +497,15 @@
             "default": "",
             "option": {
               "autoIncrement": false,
-              "primaryKey": false,
+              "primaryKey": true,
               "unique": false,
               "notNull": true
             },
             "ui": {
               "active": false,
               "pk": false,
-              "fk": true,
-              "pfk": false,
+              "fk": false,
+              "pfk": true,
               "widthName": 60,
               "widthComment": 80,
               "widthDataType": 82.1328125,
@@ -520,15 +520,15 @@
             "default": "AUTO_INCREMENT",
             "option": {
               "autoIncrement": false,
-              "primaryKey": false,
+              "primaryKey": true,
               "unique": false,
               "notNull": true
             },
             "ui": {
               "active": false,
               "pk": false,
-              "fk": true,
-              "pfk": false,
+              "fk": false,
+              "pfk": true,
               "widthName": 87.77587890625,
               "widthComment": 71.5703125,
               "widthDataType": 60,
@@ -540,7 +540,7 @@
           "active": false,
           "left": 392.1223,
           "top": 297.7524,
-          "zIndex": 236,
+          "zIndex": 9,
           "widthName": 60,
           "widthComment": 84.5703125,
           "color": "#009688"
@@ -672,7 +672,7 @@
           "active": false,
           "left": 388.0494,
           "top": 986.7762,
-          "zIndex": 235,
+          "zIndex": 2,
           "widthName": 60,
           "widthComment": 71.5703125,
           "color": "#00BCD4"
@@ -781,7 +781,7 @@
           "active": false,
           "left": 1187.3102,
           "top": 897.5557,
-          "zIndex": 297,
+          "zIndex": 5,
           "widthName": 63.775390625,
           "widthComment": 102.140625,
           "color": "#FF002C"
@@ -850,7 +850,7 @@
       },
       {
         "id": "8ff7bf87-83d7-4f20-8540-c0fb7c254e2d",
-        "identification": false,
+        "identification": true,
         "relationshipType": "OneN",
         "startRelationshipType": "Dash",
         "start": {
@@ -876,7 +876,7 @@
       },
       {
         "id": "01fbaa8c-cc47-40ce-a2cc-e07b02ad5939",
-        "identification": false,
+        "identification": true,
         "relationshipType": "OneN",
         "startRelationshipType": "Dash",
         "start": {

@@ -22,3 +22,17 @@ const useLoginUserStore =  create<LoginUserStore> (set => ({
 
  또한 ...state 이것은 state 와 동일한 새로운 객체를 생성하여 그 새로운 state 객체 안에 loginUser를 새로 생성하여 추가하거나 있다면 업데이트 함.
  
+
+
+ 2. password 암호화 인코딩
+
+ security 라이브러리 에 있는
+
+ private PasswordEncoder PasswordEncoder = new BCryptPasswordEncoder();
+
+ String password = dto.getPassword();
+
+ String encodedPassword = passwordEncoder.encode(password);
+
+ dto.setPassword(encodePassword); // 암호화 해서 다시 넣기
+ 
